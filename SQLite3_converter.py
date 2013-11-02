@@ -4,13 +4,13 @@ import xml.etree.cElementTree as etree
 import logging
 
 ANATHOMY = {
- 'badges': {
+ 'Badges': {
   'Id':'INTEGER',
   'UserId':'INTEGER',
   'Name':'TEXT',
   'Date':'DATETIME',
  },
- 'comments': {
+ 'Comments': {
   'Id':'INTEGER',
   'PostId':'INTEGER',
   'Score':'INTEGER',
@@ -19,7 +19,7 @@ ANATHOMY = {
   'UserDisplayName':'TEXT',
   'UserId':'INTEGER',
  },
- 'posts': {
+ 'Posts': {
   'Id':'INTEGER', 
   'PostTypeId':'INTEGER', # 1: Question, 2: Answer
   'ParentID':'INTEGER', # (only present if PostTypeId is 2)
@@ -42,7 +42,7 @@ ANATHOMY = {
   'FavoriteCount':'INTEGER',
   'ClosedDate':'DATETIME',
  },
- 'votes': {
+ 'Votes': {
   'Id':'INTEGER',
   'PostId':'INTEGER',
   'UserId':'INTEGER',
@@ -63,7 +63,7 @@ ANATHOMY = {
   'CreationDate':'DATETIME',
   'BountyAmount':'INTEGER'
  },
- 'users': {
+ 'Users': {
   'Id':'INTEGER',
   'Reputation':'INTEGER',
   'CreationDate':'DATETIME',
@@ -78,7 +78,7 @@ ANATHOMY = {
   'DownVotes':'INTEGER',
   'EmailHash':'TEXT'
   },
- 'posthistory': {
+ 'PostHistory': {
   'Id':'INTEGER',
   'PostId':'INTEGER',
   'PostHistoryTypeId':'INTEGER',
